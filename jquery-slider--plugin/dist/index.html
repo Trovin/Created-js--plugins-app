@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="HandheldFriendly" content="true">
+      <meta name="description" content="description">
+      <meta name="keywords" content="keywords">
+      <title>Simple slider plugin</title>
+      <link type="text/css" rel="stylesheet" href="css/reset.css">
+      <link type="text/css" rel="stylesheet" href="css/common.css">
+      <!-- slider styles -->
+      <link type="text/css" rel="stylesheet" href="css/style.css">
+   </head>
+   <body>
+
+      <header class="header">
+         <h1>Simple slider</h1>
+      </header>
+
+      <div class="section section-main">
+         <!-- slider html markup -->
+         <div class="slider" id="slider">
+            <div class="slide">
+               <h2>slide 1</h2>
+               <img src="img/slider-img.jpg" alt="slider-img">
+            </div>
+            <div class="slide">
+               <h2>slide 2</h2>
+               <img src="img/slider-img.jpg" alt="slider-img">
+            </div>
+            <div class="slide">
+               <h2>slide 3</h2>
+               <img src="img/slider-img.jpg" alt="slider-img">
+            </div>
+         </div>
+         <!-- end slider -->
+      </div>
+      
+      <footer class="footer">
+         <p>dev by <a href="https://vk.com/ruslan_trovin" target="_blank">#RuslanTrovin</a></p>
+      </footer>
+
+      <!-- script -->
+      <script src="js/jquery-3.2.1.min.js"></script>
+      <script src="js/slider.js"></script>
+
+      <!-- init slider -->
+      <script>
+         $(document).ready(function() {
+          $('#slider').slider({ 
+               current_slide: '0',
+               speed: 500,
+               nav: true,
+               dots: true,
+               autoscroll: true,
+               scrollSpeed: 2000,
+               animation: 'slide_right',
+            });
+         });  
+      </script>
+      
+   </body>
+</html>
